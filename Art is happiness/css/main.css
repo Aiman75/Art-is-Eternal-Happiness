@@ -19,6 +19,14 @@ body {
 
 .nav {
     list-style-type:none;
+    background: #54d154;
+    color: #FFF;
+    padding: 5px;
+}
+
+.nav a {
+  color: #FFF;
+  text-decoration: none;
 }
 
 header ul li {
