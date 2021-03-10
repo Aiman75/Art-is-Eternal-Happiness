@@ -268,7 +268,6 @@ div.container div.next .arrow-right {
 
 .visible,.visible2,.visible3,.visible4 {
     min-width: 50%;
-    max-width: 500px;
     height: 200px;
     position: absolute;
     top: 0;
