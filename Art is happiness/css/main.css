@@ -89,17 +89,32 @@ color: #FFF;
 text-decoration: none;
 }
 
+.nav a:hover {
+  background: #56b321;
+  color: #FFF;
+  text-decoration: none;
+}
+
 .switch {
   margin: 5px;
+  padding-right: 120px;
 }
 
 .switch p {
   color: #FFF !important;
-  text-align: center;
   font-family: "Nautilus";
+  font-size: 1.3rem !important;
 }
 
+.recherche_p {
+  margin: 5px 30px 0 0;
+}
 
+#search {
+  background: rgba(255, 254, 254, 0.836);
+  border-radius: 30px;
+  padding: 5px;
+}
  
  /* DEBUT BOUTON SCROLL  */
 
@@ -365,8 +380,8 @@ div.next .arrow-right {
 }
 
 .carousel-pause-btn {
-  background: green;
-  color: #FFF;
+  background-color: rgb(205, 219, 235);
+  color: #000;
   padding: 5px 12px;
   border-radius: 30px;
   cursor: pointer;
