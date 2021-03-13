@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  font-family: sans-serif !important;
 }
 
 html {
@@ -13,19 +14,51 @@ html {
   padding: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul li {
+  display:block;
+  float:left;
+  padding-left:10px;
+}
+
+
+header {
+background-image: url(../img/bureau.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+height: 100vh;
+width: 100%;
+display: table;
+}
+
 h1 {
   text-align: center;
   padding-top: 180px;
-  font-size:  3em;
-  color: #077707 !important;
+  font-size:  4.5rem !important;
+  font-weight: 900 !important;
+  color: #FFF !important;
   text-shadow: 1px 1px 2px #000;
 }
 
 .titre {
-  text-align: center;
-  padding-top: 25px;
-  color: #077707 !important;
-  text-shadow: 1px 1px 2px #000;
+  display: flex;
+  justify-content: center;
+}
+
+.titre-btn {
+  display: flex;
+  justify-content: center;
+  background: #87d05e;
+  font-size:  1.5rem !important;
+  color: #FFF;
+  padding: 5px 12px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 h2 {
@@ -35,13 +68,12 @@ h2 {
   
 .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #fff;
 }
 
 .nav {
   list-style-type:none;
-  background: #54d154;
   color: #FFF;
   padding: 5px;
 }
@@ -51,39 +83,41 @@ color: #FFF;
 text-decoration: none;
 }
 
-header ul li {
-    display:block;
-    float:left;
-    padding-left:10px;
+.switch {
+  margin: 5px;
 }
+
+.switch p {
+  color: #FFF !important;
+  text-align: center;
+}
+
 
  
  /* DEBUT BOUTON SCROLL  */
 
-header {
-  background-image: url(../img/bureau.jpg);
-  height: 100vh;
-  width: 100%;
-  display: table;
-  
-}
 section.ok{
   background-color: #fff;
 }
 
-p{
+/* p{
   color: white;
   font-family: arial;
   display: flex;
   justify-content: center;
   text-align: center;
   vertical-align: middle;
-}
+} */
 
 .scroll-down {
+  background: #87d05e;
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;
+}
+
+.scroll-down:hover {
+  background: #56b321;
 }
 
 .scroll-down {
@@ -138,6 +172,10 @@ p{
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
   }
+}
+
+.testimonials {
+  padding-bottom: 30px;
 }
 
 .ligne {
@@ -330,13 +368,27 @@ div.next .arrow-right {
 
 /********************* FIN DU CAROUSSEL ***************************/
 
+.happy-clients {
+  background: #f1f1f1;
+  padding-bottom: 30px;
+}
+
 .clients {
   width: 100%;
 }
 
 .all-clients {
-  display: flex;
-  justify-content: center;
+  margin-top: 70px;
+  text-align: center;
+  z-index: 3 !important;
+}
+
+.all-clients-btn {
+  background: #dcdbdb;
+  color: #7c7a7a;
+  padding: 5px 22px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .team {
@@ -358,13 +410,17 @@ div.next .arrow-right {
 .icones{
   display: flex;
   justify-content: space-around;
-  padding: 10px;
-  border-radius: 30px 30px  30px 30px;
+  padding: 5px 0 5px 0;
+  border-radius: 30px 30px 30px 30px;
   background-color: #c5e9c5;
 }
 
 .reseaux {
-  max-width: 20%;
+  margin-left: 5px;
+}
+
+.imgRreseaux {
+  max-width: 80%;
   border-radius: 100px;
 }
 
