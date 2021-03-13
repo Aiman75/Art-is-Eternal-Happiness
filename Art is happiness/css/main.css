@@ -4,7 +4,13 @@ body {
 }
 
 html {
-  scroll-behavior: smooth !important;}
+  scroll-behavior: smooth !important;
+}
+
+@font-face {
+  font-family: "Nautilus";
+  src: url("/fonts/Nautilus.otf");
+ }
 
 *,
 :after,
@@ -90,6 +96,7 @@ text-decoration: none;
 .switch p {
   color: #FFF !important;
   text-align: center;
+  font-family: "Nautilus";
 }
 
 
