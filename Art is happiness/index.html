@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" />
+
 
 </head>
     <body>
@@ -27,6 +29,9 @@
                 <div class="recherche_p">
                         <form action="/search" id="searchthis" method="get">
                         <input id="search" name="q" type="text" placeholder="Search..." />
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
                         </form>
                 </div>
 
@@ -69,9 +74,9 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus totam laborum minima voluptas accusamus</p>
                 <div class="photo">
                     <ul>
-                        <li class="Photography">Photography</li>
-                        <li class="design">Design</li>
-                        <li class="print">Print</li>
+                        <li class="Photography"><a href="#">Photography</a></li>
+                        <li class="design"><a href="#">Design</a></li>
+                        <li class="print"><a href="#">Print</a></li>
                     </ul>
                 </div>
                 <div id="galerie_haut"  class="d-flex justify-content-around flex-wrap">
@@ -152,7 +157,7 @@
                         </li>
                     </ul>
                     <div class="pause-btn">
-                        <button class="carousel-pause-btn">Pause carousel</button>
+                        <button class="carousel-pause-btn">Pause</button>
                     </div>
 
                      <!-- ///////////////////////// fin caroussel //////////////////////////////////////////// -->
@@ -163,9 +168,9 @@
                     <hr class="ligne">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus totam laborum minima voluptas accusamus</p>
                     <img class="clients" src="img/clients.jpg" alt="clients">
-                </div>
                 <div class="all-clients">
                 <button class="all-clients-btn">See all clients →</button>
+                </div>
                 </div>
             </section>
             <section class="team">
