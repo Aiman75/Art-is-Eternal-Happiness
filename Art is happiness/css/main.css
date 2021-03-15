@@ -23,23 +23,19 @@ html {
 header {
   display: flex;
   justify-content: space-around;
+  background-image: url(../img/bureau.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  padding-top: 15px;
 }
 
 header ul li {
   display:block;
   float:left;
   padding-left:10px;
-}
-
-
-header {
-background-image: url(../img/bureau.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-height: 100vh;
-width: 100%;
-display: table;
 }
 
 h1 {
@@ -59,12 +55,16 @@ h1 {
 .titre-btn {
   display: flex;
   justify-content: center;
-  background: #87d05e;
+  background: rgb(135, 208, 94);
   font-size:  1.5rem !important;
   color: #FFF;
   padding: 5px 12px;
   border-radius: 30px;
   cursor: pointer;
+}
+
+.titre-btn:hover {
+  background: #56b321;
 }
 
 h2 {
@@ -113,23 +113,24 @@ text-decoration: none;
 #search {
   background: rgba(255, 254, 254, 0.836);
   border-radius: 30px;
-  padding: 5px;
+  padding: 5px 30px 5px 5px;
+}
+
+.btn-outline-secondary {
+  transform: translateX(-50px);
+  border-style: none !important;
 }
  
  /* DEBUT BOUTON SCROLL  */
 
 section.ok{
   background-color: #fff;
+  padding-bottom: 30px;
 }
 
-/* p{
-  color: white;
-  font-family: arial;
-  display: flex;
-  justify-content: center;
+p{
   text-align: center;
-  vertical-align: middle;
-} */
+}
 
 .scroll-down {
   background: #87d05e;
@@ -196,6 +197,14 @@ section.ok{
   }
 }
 
+/* FIN BOUTON SCROLL  */
+
+button {
+  padding: 5px 12px;
+  border-radius: 30px !important;
+  cursor: pointer;
+}
+
 .testimonials {
   padding-bottom: 30px;
 }
@@ -211,7 +220,8 @@ section.ok{
 }
 
 .trois {
-  background-color: green;
+  background: #87d05e;
+  padding-bottom: 30px;
 }
 
 .trois, p{
@@ -239,12 +249,53 @@ section.ok{
 
 .design, .print {
   background-color: #FFF !important;
+  cursor: pointer;
   color: green;
+}
+
+.design a, .print a {
+  color: green;
+}
+
+.design:hover, .print:hover {
+  background: #56b321 !important;
+  text-decoration: none;
+  color: #FFF !important;
+}
+
+.design:hover a, .print:hover a {
+  text-decoration: none;
+  color: #FFF !important;
+}
+
+.design a:hover, .print a:hover {
+  text-decoration: none;
+  color: #FFF !important;
 }
 
 .Photography {
   border-radius: 30px 0 0 30px;
   color: #fff !important;
+}
+
+.Photography a {
+  color: #fff !important;
+}
+
+.Photography a:hover {
+  color: green !important;
+  text-decoration: none;
+}
+
+.Photography:hover {
+  background-color: #FFF !important;
+  color: green !important;
+  cursor: pointer;
+}
+
+.Photography:hover a {
+  color: green !important;
+  cursor: pointer;
 }
 
 .print {
@@ -415,6 +466,7 @@ div.next .arrow-right {
 
 .team {
   background-color: #54d154;
+  padding-bottom: 30px;
 }
 
 .portrait {
