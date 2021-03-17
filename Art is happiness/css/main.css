@@ -724,6 +724,7 @@ div.next .arrow-right {
   background: #5e9a39;
   width: 100%;
   text-align: center;
+  color: #FFF;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -733,15 +734,55 @@ div.next .arrow-right {
 }
 
 .send:hover {
+  background: #FFF !important;
   color: #5e9a39 !important;
-  background: #FFF;
   text-decoration: none;
   transition: .2s ease-in-out;
 }
 
 .send a:hover {
   color: #5e9a39 !important;
+  background: #FFF !important;
   text-decoration: none;
 }
 
+.seen {
+  background: #272727;
+  color: #181818;
+  padding-bottom: 30px;
+}
+.seen_img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.heart {
+  background: #181818;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
+.heart p {
+  text-align: center;
+  color: #FFF;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DÉBUT RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@media screen and (max-width: 768px) {
+  .switch {
+    position: absolute;
+    transform: translate(350px, 50px);
+    /* transform: translateY(50px); */
+  }
+  
+} 
+
+@media screen and (max-width: 1024px) {
+} 
+
+@media screen and (min-width: 1025px) {
+  
+} 
 
