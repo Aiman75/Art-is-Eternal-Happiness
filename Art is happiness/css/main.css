@@ -111,7 +111,7 @@ p {
 
 .switch {
   margin: 5px;
-  transform: translateX(-80px);
+  transform: translateX(-100%);
 }
 
 .switch p {
@@ -344,6 +344,10 @@ button {
   padding-bottom: 50px;
 }
 
+.sites {
+  margin: 30px;
+}
+
 .more-work {
   display: flex;
   justify-content: center;
@@ -369,6 +373,8 @@ button {
   text-decoration: none;
   color: #FFF !important;
 }
+
+
 
 /********************* DEBUT CAROUSSEL ****************************/
 
@@ -640,6 +646,7 @@ div.next .arrow-right {
 .posts_p {
   color: #dcdcdc;
   padding: 0;
+  text-align: left;
 }
 
 .magazine {
@@ -770,11 +777,213 @@ div.next .arrow-right {
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// DÉBUT RESPONSIVE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-@media screen and (max-width: 768px) {
-  .switch {
+@media screen and (max-width: 385px) {
+/* 
+  body {
+    max-width: 375px;
+  } */
+
+  .heart {
+    max-width: 375px;
+  }
+}
+
+@media screen and (max-width: 507px) {
+/* 
+  header {
+    height: auto;
+  } */
+
+  h1 {
+    padding-top: 10px !important;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .recherche_p {
+    width: 50px;
+  }
+
+  #search {
     position: absolute;
-    transform: translate(350px, 50px);
-    /* transform: translateY(50px); */
+    transform: translate(150px, -280px);
+  }
+
+  .btn-outline-secondary {
+    transform: translate(315px, -280px);
+}
+
+.divScroll {
+  transform: translate(-30px,-20px) !important;
+}
+
+.switch {
+  transform: translate(0%, 0%) !important;
+}
+
+.portrait {
+  transform: translateX(10%);
+}
+
+.vertical {
+  width: auto;
+}
+
+#galerie_haut {
+  display: block;
+}
+
+.portrait-1, .portrait-2, .portrait-3 {
+  padding: 0 60px 0 60px !important;
+  text-align: center;
+}
+
+.next-image {
+  right: 20px;
+}
+
+.prev-image {
+  left: 20px;
+}
+
+}
+
+@media all and (min-width: 320px) and (max-width: 575px) {
+  .teamPortrait {
+    width: 50% !important;
+    margin: 10px;
+  }
+}
+
+@media all and (min-width: 302px) and (max-width: 768px) {
+
+
+  .icones-down {
+    transform: translateX(50%) !important;
+  }
+
+  .seen_img {
+    display: block !important;
+    text-align: center;
+  }
+
+  .seen_img img {
+    width: 50%;
+    margin: 30px;
+    /* padding-left: 10px; */
+  }
+
+}
+
+@media screen and (max-width: 742px) {
+  /* h1 {
+    padding-top: 20px;
+    font-size: 3.5rem !important;
+  } */
+  
+  /* .icones-down {
+    transform: translateX(180px);
+  } */
+
+  
+} 
+
+@media all and (min-width: 642px) and (max-width: 767px) {
+
+  
+  header {
+    height:50vh;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+
+  .switch {
+    transform: translate(-50%, 50px);
+  }
+
+} 
+
+@media screen and (max-width: 798px) {
+  
+  
+  h1 {
+    padding-top: 20px;
+    font-size: 2.5rem !important;
+  }
+
+  .nav {
+    width: 150px;
+  }
+
+  .nav li {
+    padding-bottom: 30px;
+  }
+
+  .divScroll {
+    transform: translateY(-280px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .appareil {
+    margin-bottom: 30px;
+  }
+
+  .portrait-1, .portrait-2, .portrait-3 {
+    padding: 0 200px 0 200px;
+  }
+
+
+  .history {
+    font-size: 0.7rem;
+  }
+  
+} 
+
+@media screen and (max-width: 962px) {
+  
+  
+} 
+
+@media screen and (max-width: 998px) {
+  
+  
+  h1 {
+    padding-top: 60px;
+  }
+
+  
+  .switch {
+    transform: translate(-100%, 50px);
+  }
+/* 
+  header {
+    height:50vh;
+  } */
+
+  .divScroll {
+    transform: translateY(-20px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .clients {
+    padding: 0 10px 0 10px;
+  }
+
+  .portrait {
+    margin-top: 50px;
+  }
+  
+
+  .icones-down {
+    transform: translateX(60px);
+    max-width: 50% !important;
   }
   
 } 
