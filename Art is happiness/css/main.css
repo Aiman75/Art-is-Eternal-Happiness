@@ -778,10 +778,6 @@ div.next .arrow-right {
 
 
 @media screen and (max-width: 385px) {
-/* 
-  body {
-    max-width: 375px;
-  } */
 
   .heart {
     max-width: 375px;
@@ -789,10 +785,6 @@ div.next .arrow-right {
 }
 
 @media screen and (max-width: 507px) {
-/* 
-  header {
-    height: auto;
-  } */
 
   h1 {
     padding-top: 10px !important;
@@ -835,18 +827,6 @@ div.next .arrow-right {
   display: block;
 }
 
-.portrait-1, .portrait-2, .portrait-3 {
-  padding: 0 60px 0 60px !important;
-  text-align: center;
-}
-
-.next-image {
-  right: 20px;
-}
-
-.prev-image {
-  left: 20px;
-}
 
 }
 
@@ -872,23 +852,23 @@ div.next .arrow-right {
   .seen_img img {
     width: 50%;
     margin: 30px;
-    /* padding-left: 10px; */
   }
 
+  
+.portrait-1, .portrait-2, .portrait-3 {
+  padding: 0 60px 0 60px !important;
+  text-align: center;
 }
 
-@media screen and (max-width: 742px) {
-  /* h1 {
-    padding-top: 20px;
-    font-size: 3.5rem !important;
-  } */
-  
-  /* .icones-down {
-    transform: translateX(180px);
-  } */
+.next-image {
+  right: 20px;
+}
 
-  
-} 
+.prev-image {
+  left: 20px;
+}
+
+}
 
 @media all and (min-width: 642px) and (max-width: 767px) {
 
@@ -947,7 +927,10 @@ div.next .arrow-right {
 
 @media screen and (max-width: 962px) {
   
-  
+  .portrait-1, .portrait-2, .portrait-3 {
+    padding: 0 200px 0 200px;
+  }
+
 } 
 
 @media screen and (max-width: 998px) {
@@ -961,10 +944,6 @@ div.next .arrow-right {
   .switch {
     transform: translate(-100%, 50px);
   }
-/* 
-  header {
-    height:50vh;
-  } */
 
   .divScroll {
     transform: translateY(-20px);
